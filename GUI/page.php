@@ -14,8 +14,7 @@ class page
     public $buttons = array("home" => "home.php",
         "menu1" => "menu1.php",
         "menu2" => "sign-up.php",
-        "menu3" => "menu3.php",
-        "menu4" => "menu4.php");
+        "menu3" => "menu3.php");
 
     // class operation
     public function __set($name, $value){
@@ -50,7 +49,7 @@ class page
         ?>
         <!--- page header -->
         <header>
-            <img src="logo.png" alt="TLA logo" height="70" width="270"/>
+            <img src="images/logo.png" alt="TLA logo" height="70" width="270"/>
             <h1>WESAYSO</h1>
         </header>
         <?php

@@ -6,7 +6,7 @@
  * Time: 21:36
  */
 require("page.php");
-include_once("newsletteruser.php");
+// include_once("newsletteruser.php");
 
 Class SignupPage extends Page
 {
