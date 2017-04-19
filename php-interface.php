@@ -41,6 +41,8 @@ class Triangle implements Shape {
     private $h;
     private $g;
 
+    use logger;
+
     public function __construct($h,$g) {
         $this->h = $h;
         $this->g = $g;
@@ -51,10 +53,18 @@ class Triangle implements Shape {
     }
 }
 
+trait logger{
+    function logmessage ($message, $level='debug'){
+        //write to a log
+    }
+}
+
 function calculateArea(Shape $shape) {
     echo "the area of shape, is: ";
     return $shape->getArea();
 }
+
+
 
 $square = new Square(5, 5);
 $circle = new Circle(7);
